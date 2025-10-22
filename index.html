@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Flor´s Library — Inicio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="home">
+<header class="site-header">
+<div class="container nav">
+<a class="brand" href="index.html"><i class="ri-book-3-fill"></i> Flor´s Library</a>
+<button class="nav-toggle" aria-label="Abrir menú"><i class="ri-menu-3-line"></i></button>
+<nav class="site-nav" aria-label="Principal">
+<a href="index.html" class="nav-link is-active"><i class="ri-home-5-line"></i><span>Inicio</span></a>
+<a href="biblioteca.html" class="nav-link"><i class="ri-gallery-view-2"></i><span>Biblioteca</span></a>
+<a href="sobre-mi.html" class="nav-link"><i class="ri-user-heart-line"></i><span>Sobre mí</span></a>
+<a href="contacto.html" class="nav-link"><i class="ri-heart-2-line"></i><span>Contacto</span></a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero">
+<div class="container hero__content">
+<h1 class="display">Donde cada página florece</h1>
+<p class="lead">Bienvenida a Flor´s Library — un rincón excéntrico, femenino y brillante para descubrir historias que inspiran, despiertan y acompañan.</p>
+<div class="hero__cta">
+<a class="btn btn--primary" href="biblioteca.html"><i class="ri-magic-line"></i> Explorar Biblioteca</a>
+<a class="btn btn--ghost" href="#destacados"><i class="ri-sparkling-2-line"></i> Ver Destacados</a>
+</div>
+</div>
+<div class="hero__ornaments" aria-hidden="true"></div>
+</section>
+
+<section id="destacados" class="section">
+<div class="container">
+<h2 class="section__title"><i class="ri-sparkling-fill"></i> Destacados de la semana</h2>
+<div class="grid cards">
+<article class="card card--book">
+<div class="card__icon"><i class="ri-bookmark-3-line"></i></div>
+<h3>Amores y constelaciones</h3>
+<p>Relatos cósmicos que celebran el corazón, la amistad y la magia cotidiana.</p>
+<a class="chip" href="biblioteca.html#romance"><i class="ri-heart-2-line"></i> Romance</a>
+</article>
+<article class="card card--book">
+<div class="card__icon"><i class="ri-planet-line"></i></div>
+<h3>Reinos de azafrán</h3>
+<p>Fantasía especiada con heroínas indomables y ciudades hechas de sueños.</p>
+<a class="chip" href="biblioteca.html#fantasia"><i class="ri-sword-line"></i> Fantasía</a>
+</article>
+<article class="card card--book">
+<div class="card__icon"><i class="ri-brain-line"></i></div>
+<h3>La alquimia del hábito</h3>
+<p>Guía práctica para cultivar rutinas radiantes y una vida con intención.</p>
+<a class="chip" href="biblioteca.html#no-ficcion"><i class="ri-seedling-line"></i> No Ficción</a>
+</article>
+</div>
+</div>
+</section>
+
+<section class="section alt">
+<div class="container">
+<h2 class="section__title"><i class="ri-moon-clear-line"></i> Categorías populares</h2>
+<div class="chips">
+<a class="chip chip--pill" href="biblioteca.html#romance"><i class="ri-heart-3-line"></i> Romance</a>
+<a class="chip chip--pill" href="biblioteca.html#fantasia"><i class="ri-sparkling-2-line"></i> Fantasía</a>
+<a class="chip chip--pill" href="biblioteca.html#misterio"><i class="ri-ghost-line"></i> Misterio</a>
+<a class="chip chip--pill" href="biblioteca.html#no-ficcion"><i class="ri-pencil-ruler-2-line"></i> No Ficción</a>
+<a class="chip chip--pill" href="biblioteca.html#poesia"><i class="ri-quill-pen-line"></i> Poesía</a>
+</div>
+</div>
+</section>
+
+<section class="section newsletter">
+<div class="container">
+<h2 class="section__title"><i class="ri-mail-star-line"></i> Únete al club de lectura</h2>
+<form class="form form--inline" id="form-newsletter" novalidate>
+<label class="sr-only" for="email-news">Correo electrónico</label>
+<input id="email-news" name="email" type="email" placeholder="tu@email.com" required />
+<button class="btn btn--secondary" type="submit"><i class="ri-sparkling-fill"></i> Suscribirme</button>
+<small class="form__hint">Sin spam, solo brillo literario.</small>
+</form>
+</div>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="container footer__grid">
+<div>
+<a class="brand brand--sm" href="index.html"><i class="ri-book-3-fill"></i> Flor´s Library</a>
+<p class="muted">Lecturas para corazones curiosos. Diseñado con amor y extravagancia.</p>
+</div>
+<div class="footer__links">
+<a href="sobre-mi.html"><i class="ri-user-heart-line"></i> Sobre mí</a>
+<a href="contacto.html"><i class="ri-heart-2-line"></i> Contacto</a>
+<a href="biblioteca.html"><i class="ri-gallery-view-2"></i> Biblioteca</a>
+</div>
+</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+

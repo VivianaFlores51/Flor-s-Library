@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Flor´s Library — Biblioteca</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="library">
+<header class="site-header">
+<div class="container nav">
+<a class="brand" href="index.html"><i class="ri-book-3-fill"></i> Flor´s Library</a>
+<button class="nav-toggle" aria-label="Abrir menú"><i class="ri-menu-3-line"></i></button>
+<nav class="site-nav" aria-label="Principal">
+<a href="index.html" class="nav-link"><i class="ri-home-5-line"></i><span>Inicio</span></a>
+<a href="biblioteca.html" class="nav-link is-active"><i class="ri-gallery-view-2"></i><span>Biblioteca</span></a>
+<a href="sobre-mi.html" class="nav-link"><i class="ri-user-heart-line"></i><span>Sobre mí</span></a>
+<a href="contacto.html" class="nav-link"><i class="ri-heart-2-line"></i><span>Contacto</span></a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="section">
+<div class="container">
+<h1 class="section__title"><i class="ri-gallery-view-2"></i> La Biblioteca</h1>
+<p class="lead">Explora por categoría y filtra por estado de lectura. Todo ícono, cero imágenes.</p>
+
+<div class="filters">
+<div class="chips" role="listbox" aria-label="Categorías">
+<button class="chip chip--pill is-active" data-filter="all"><i class="ri-sparkling-2-line"></i> Todos</button>
+<button class="chip chip--pill" data-filter="romance"><i class="ri-heart-3-line"></i> Romance</button>
+<button class="chip chip--pill" data-filter="fantasia"><i class="ri-sword-line"></i> Fantasía</button>
+<button class="chip chip--pill" data-filter="misterio"><i class="ri-ghost-line"></i> Misterio</button>
+<button class="chip chip--pill" data-filter="no-ficcion"><i class="ri-seedling-line"></i> No Ficción</button>
+<button class="chip chip--pill" data-filter="poesia"><i class="ri-quill-pen-line"></i> Poesía</button>
+</div>
+<div class="chips" role="listbox" aria-label="Estado">
+<button class="chip" data-status="all"><i class="ri-eye-2-line"></i> Todo</button>
+<button class="chip" data-status="leyendo"><i class="ri-book-open-line"></i> Leyendo</button>
+<button class="chip" data-status="finalizado"><i class="ri-check-line"></i> Finalizado</button>
+</div>
+</div>
+
+<div class="grid cards" id="library-grid">
+<!-- Romance (libros reales) -->
+<article class="card card--book" data-category="romance" data-status="pendiente">
+<div class="card__icon"><i class="ri-heart-2-fill"></i></div>
+<h3>Orgullo y prejuicio</h3>
+<p><strong>Jane Austen</strong>, 1813 — Ingenio y crítica social en el romance entre Elizabeth Bennet y Mr. Darcy.</p>
+<div class="meta"><span class="chip"><i class="ri-heart-3-line"></i> Romance</span><span class="chip"><i class="ri-bookmark-line"></i> Pendiente</span></div>
+</article>
+
+<article class="card card--book" data-category="romance" data-status="finalizado">
+<div class="card__icon"><i class="ri-sparkling-2-fill"></i></div>
+<h3>Eleanor & Park</h3>
+<p><strong>Rainbow Rowell</strong>, 2012 — Primer amor, música en cassette y dos almas raras que se reconocen.</p>
+<div class="meta"><span class="chip"><i class="ri-heart-3-line"></i> Romance</span><span class="chip"><i class="ri-check-line"></i> Finalizado</span></div>
+</article>
+
+<article class="card card--book" data-category="romance" data-status="leyendo">
+<div class="card__icon"><i class="ri-hearts-fill"></i></div>
+<h3>Yo antes de ti</h3>
+<p><strong>Jojo Moyes</strong>, 2012 — Una historia de amor y decisiones difíciles que conmueve.</p>
+<div class="meta"><span class="chip"><i class="ri-heart-3-line"></i> Romance</span><span class="chip"><i class="ri-book-open-line"></i> Leyendo</span></div>
+</article>
+
+<article class="card card--book" data-category="romance" data-status="pendiente">
+<div class="card__icon"><i class="ri-rose-line"></i></div>
+<h3>La canción de Aquiles</h3>
+<p><strong>Madeline Miller</strong>, 2011 — Relectura lírica del vínculo entre Patroclo y Aquiles.</p>
+<div class="meta"><span class="chip"><i class="ri-heart-3-line"></i> Romance</span><span class="chip"><i class="ri-bookmark-line"></i> Pendiente</span></div>
+</article>
+
+<!-- Fantasía (libros reales) -->
+<article class="card card--book" data-category="fantasia" data-status="leyendo">
+<div class="card__icon"><i class="ri-planet-line"></i></div>
+<h3>El nombre del viento</h3>
+<p><strong>Patrick Rothfuss</strong>, 2007 — Kvothe narra su vida: música, magia y pérdidas con prosa hipnótica.</p>
+<div class="meta"><span class="chip"><i class="ri-sword-line"></i> Fantasía</span><span class="chip"><i class="ri-book-open-line"></i> Leyendo</span></div>
+</article>
+
+<article class="card card--book" data-category="fantasia" data-status="pendiente">
+<div class="card__icon"><i class="ri-moon-clear-line"></i></div>
+<h3>La ciudad de bronce</h3>
+<p><strong>S. A. Chakraborty</strong>, 2017 — Un Cairo misterioso, djinns y una corte repleta de intrigas.</p>
+<div class="meta"><span class="chip"><i class="ri-sword-line"></i> Fantasía</span><span class="chip"><i class="ri-bookmark-line"></i> Pendiente</span></div>
+</article>
+
+<article class="card card--book" data-category="fantasia" data-status="finalizado">
+<div class="card__icon"><i class="ri-sparkling-2-fill"></i></div>
+<h3>La canción de hielo y fuego: Juego de tronos</h3>
+<p><strong>George R. R. Martin</strong>, 1996 — Intrigas políticas y dragones en Poniente.</p>
+<div class="meta"><span class="chip"><i class="ri-sword-line"></i> Fantasía</span><span class="chip"><i class="ri-check-line"></i> Finalizado</span></div>
+</article>
+
+<article class="card card--book" data-category="fantasia" data-status="pendiente">
+<div class="card__icon"><i class="ri-magic-line"></i></div>
+<h3>La sombra del viento</h3>
+<p><strong>Carlos Ruiz Zafón</strong>, 2001 — Misterio literario en la Barcelona de posguerra con tintes fantásticos.</p>
+<div class="meta"><span class="chip"><i class="ri-sword-line"></i> Fantasía</span><span class="chip"><i class="ri-bookmark-line"></i> Pendiente</span></div>
+</article>
+
+<!-- Misterio (libros reales) -->
+<article class="card card--book" data-category="misterio" data-status="leyendo">
+<div class="card__icon"><i class="ri-search-eye-line"></i></div>
+<h3>La chica del tren</h3>
+<p><strong>Paula Hawkins</strong>, 2015 — Una narradora poco fiable se involucra en una desaparición.</p>
+<div class="meta"><span class="chip"><i class="ri-ghost-line"></i> Misterio</span><span class="chip"><i class="ri-book-open-line"></i> Leyendo</span></div>
+</article>
+
+<article class="card card--book" data-category="misterio" data-status="finalizado">
+<div class="card__icon"><i class="ri-key-2-line"></i></div>
+<h3>El silencio de los corderos</h3>
+<p><strong>Thomas Harris</strong>, 1988 — Clarice Starling y Hannibal Lecter en un duelo mental inolvidable.</p>
+<div class="meta"><span class="chip"><i class="ri-ghost-line"></i> Misterio</span><span class="chip"><i class="ri-check-line"></i> Finalizado</span></div>
+</article>
+
+<article class="card card--book" data-category="misterio" data-status="pendiente">
+<div class="card__icon"><i class="ri-compass-3-line"></i></div>
+<h3>El código Da Vinci</h3>
+<p><strong>Dan Brown</strong>, 2003 — Pistas, arte y sociedades secretas en un thriller vertiginoso.</p>
+<div class="meta"><span class="chip"><i class="ri-ghost-line"></i> Misterio</span><span class="chip"><i class="ri-bookmark-line"></i> Pendiente</span></div>
+</article>
+
+<article class="card card--book" data-category="misterio" data-status="finalizado">
+<div class="card__icon"><i class="ri-eye-2-line"></i></div>
+<h3>El nombre de la rosa</h3>
+<p><strong>Umberto Eco</strong>, 1980 — Crimen monástico con erudición medieval y suspense.</p>
+<div class="meta"><span class="chip"><i class="ri-ghost-line"></i> Misterio</span><span class="chip"><i class="ri-check-line"></i> Finalizado</span></div>
+</article>
+
+<!-- No Ficción (libros reales) -->
+<article class="card card--book" data-category="no-ficcion" data-status="pendiente">
+<div class="card__icon"><i class="ri-brain-line"></i></div>
+<h3>Hábitos atómicos</h3>
+<p><strong>James Clear</strong>, 2018 — Estrategias claras para construir hábitos y mejorar 1% cada día.</p>
+<div class="meta"><span class="chip"><i class="ri-seedling-line"></i> No Ficción</span><span class="chip"><i class="ri-bookmark-line"></i> Pendiente</span></div>
+</article>
+
+<article class="card card--book" data-category="no-ficcion" data-status="finalizado">
+<div class="card__icon"><i class="ri-lightbulb-line"></i></div>
+<h3>El poder de los hábitos</h3>
+<p><strong>Charles Duhigg</strong>, 2012 — La ciencia detrás de los hábitos y cómo transformarlos.</p>
+<div class="meta"><span class="chip"><i class="ri-seedling-line"></i> No Ficción</span><span class="chip"><i class="ri-check-line"></i> Finalizado</span></div>
+</article>
+
+<article class="card card--book" data-category="no-ficcion" data-status="leyendo">
+<div class="card__icon"><i class="ri-book-2-line"></i></div>
+<h3>Lean In</h3>
+<p><strong>Sheryl Sandberg</strong>, 2013 — Liderazgo y empoderamiento de mujeres en el trabajo.</p>
+<div class="meta"><span class="chip"><i class="ri-seedling-line"></i> No Ficción</span><span class="chip"><i class="ri-book-open-line"></i> Leyendo</span></div>
+</article>
+
+<article class="card card--book" data-category="no-ficcion" data-status="pendiente">
+<div class="card__icon"><i class="ri-earth-line"></i></div>
+<h3>Sapiens</h3>
+<p><strong>Yuval Noah Harari</strong>, 2011 — Breve historia de la humanidad con mirada crítica.</p>
+<div class="meta"><span class="chip"><i class="ri-seedling-line"></i> No Ficción</span><span class="chip"><i class="ri-bookmark-line"></i> Pendiente</span></div>
+</article>
+
+<!-- Poesía (libros reales) -->
+<article class="card card--book" data-category="poesia" data-status="leyendo">
+<div class="card__icon"><i class="ri-quill-pen-line"></i></div>
+<h3>Veinte poemas de amor y una canción desesperada</h3>
+<p><strong>Pablo Neruda</strong>, 1924 — Amor, deseo y naturaleza en versos memorables.</p>
+<div class="meta"><span class="chip"><i class="ri-quill-pen-line"></i> Poesía</span><span class="chip"><i class="ri-book-open-line"></i> Leyendo</span></div>
+</article>
+
+<article class="card card--book" data-category="poesia" data-status="pendiente">
+<div class="card__icon"><i class="ri-star-smile-line"></i></div>
+<h3>Poeta en Nueva York</h3>
+<p><strong>Federico García Lorca</strong>, 1940 — Desgarro y metáforas urbanas en la gran manzana.</p>
+<div class="meta"><span class="chip"><i class="ri-quill-pen-line"></i> Poesía</span><span class="chip"><i class="ri-bookmark-line"></i> Pendiente</span></div>
+</article>
+
+<article class="card card--book" data-category="poesia" data-status="finalizado">
+<div class="card__icon"><i class="ri-ink-bottle-line"></i></div>
+<h3>El sol y sus flores</h3>
+<p><strong>Rupi Kaur</strong>, 2017 — Poemas sobre duelo, raíces y sanación.</p>
+<div class="meta"><span class="chip"><i class="ri-quill-pen-line"></i> Poesía</span><span class="chip"><i class="ri-check-line"></i> Finalizado</span></div>
+</article>
+
+<article class="card card--book" data-category="poesia" data-status="pendiente">
+<div class="card__icon"><i class="ri-leaf-line"></i></div>
+<h3>Poemas de Alejandra</h3>
+<p><strong>Alejandra Pizarnik</strong> (selección) — Intensidad y belleza oscura en poemas esenciales.</p>
+<div class="meta"><span class="chip"><i class="ri-quill-pen-line"></i> Poesía</span><span class="chip"><i class="ri-bookmark-line"></i> Pendiente</span></div>
+</article>
+
+</div>
+</div>
+</section>
+</main>
+
+<!-- Modal lector de documentos -->
+<div class="reader" id="reader" hidden>
+<div class="reader__backdrop" data-close="reader"></div>
+<div class="reader__dialog" role="dialog" aria-modal="true" aria-labelledby="reader-title">
+<div class="reader__header">
+<h2 id="reader-title">Lector</h2>
+<div class="reader__actions">
+<button class="btn btn--secondary reader__finish" type="button"><i class="ri-check-line"></i> Terminar</button>
+<a class="btn btn--ghost reader__openlink" href="#" target="_blank" rel="noopener"><i class="ri-external-link-line"></i> Abrir en pestaña</a>
+<button class="reader__close" aria-label="Cerrar"><i class="ri-close-line"></i></button>
+</div>
+</div>
+<iframe class="reader__frame" title="Visor de documento" src="" loading="lazy"></iframe>
+</div>
+</div>
+
+<footer class="site-footer">
+<div class="container footer__grid">
+<div>
+<a class="brand brand--sm" href="index.html"><i class="ri-book-3-fill"></i> Flor´s Library</a>
+<p class="muted">Filtra, explora y guarda tus próximos amores literarios.</p>
+</div>
+<div class="footer__links">
+<a href="sobre-mi.html"><i class="ri-user-heart-line"></i> Sobre mí</a>
+<a href="contacto.html"><i class="ri-heart-2-line"></i> Contacto</a>
+<a href="biblioteca.html"><i class="ri-gallery-view-2"></i> Biblioteca</a>
+</div>
+</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+

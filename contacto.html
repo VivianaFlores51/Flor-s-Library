@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Flor´s Library — Contacto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="contact">
+<header class="site-header">
+<div class="container nav">
+<a class="brand" href="index.html"><i class="ri-book-3-fill"></i> Flor´s Library</a>
+<button class="nav-toggle" aria-label="Abrir menú"><i class="ri-menu-3-line"></i></button>
+<nav class="site-nav" aria-label="Principal">
+<a href="index.html" class="nav-link"><i class="ri-home-5-line"></i><span>Inicio</span></a>
+<a href="biblioteca.html" class="nav-link"><i class="ri-gallery-view-2"></i><span>Biblioteca</span></a>
+<a href="sobre-mi.html" class="nav-link"><i class="ri-user-heart-line"></i><span>Sobre mí</span></a>
+<a href="contacto.html" class="nav-link is-active"><i class="ri-heart-2-line"></i><span>Contacto</span></a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="section">
+<div class="container">
+<h1 class="section__title"><i class="ri-mail-star-line"></i> Hablemos</h1>
+<p class="lead">¿Tienes una recomendación, una colaboración o quieres saludar? ¡Escríbeme!</p>
+
+<form id="form-contacto" class="form" novalidate>
+<div class="form__row">
+<label for="nombre">Nombre</label>
+<div class="input">
+<i class="ri-user-heart-line"></i>
+<input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
+</div>
+</div>
+
+<div class="form__row">
+<label for="email">Correo</label>
+<div class="input">
+<i class="ri-at-line"></i>
+<input type="email" id="email" name="email" required placeholder="tu@email.com" />
+</div>
+</div>
+
+<div class="form__row">
+<label for="asunto">Asunto</label>
+<div class="input">
+<i class="ri-sparkling-2-line"></i>
+<input type="text" id="asunto" name="asunto" required placeholder="Tema del mensaje" />
+</div>
+</div>
+
+<div class="form__row">
+<label for="mensaje">Mensaje</label>
+<div class="input">
+<i class="ri-quill-pen-line"></i>
+<textarea id="mensaje" name="mensaje" rows="6" required placeholder="Cuéntame todo..."></textarea>
+</div>
+</div>
+
+<div class="form__actions">
+<button class="btn btn--primary" type="submit"><i class="ri-mail-send-line"></i> Enviar</button>
+<p class="form__note"><i class="ri-lock-2-line"></i> Tus datos son confidenciales.</p>
+</div>
+</form>
+
+<div class="socials">
+<a class="chip" href="#" aria-label="Instagram"><i class="ri-instagram-line"></i> Instagram</a>
+<a class="chip" href="#" aria-label="TikTok"><i class="ri-tiktok-line"></i> TikTok</a>
+<a class="chip" href="#" aria-label="Correo"><i class="ri-mail-line"></i> Email</a>
+</div>
+
+</div>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="container footer__grid">
+<div>
+<a class="brand brand--sm" href="index.html"><i class="ri-book-3-fill"></i> Flor´s Library</a>
+<p class="muted">Gracias por escribir; respondo con té y paciencia.</p>
+</div>
+<div class="footer__links">
+<a href="sobre-mi.html"><i class="ri-user-heart-line"></i> Sobre mí</a>
+<a href="contacto.html"><i class="ri-heart-2-line"></i> Contacto</a>
+<a href="biblioteca.html"><i class="ri-gallery-view-2"></i> Biblioteca</a>
+</div>
+</div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
+
