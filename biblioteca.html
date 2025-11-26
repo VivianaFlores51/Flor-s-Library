@@ -3,7 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Flor´s Library — Biblioteca</title>
+<title>Flor’s Library — Biblioteca</title>
+<meta name="description" content="Explora mi biblioteca por categoría y estado: romance, fantasía, misterio, no ficción y poesía. Filtra, busca y lee con un lector integrado." />
+<meta property="og:title" content="Flor’s Library — Biblioteca" />
+<meta property="og:description" content="Explora por categoría, estado o busca por título/autor. Lector integrado sin imágenes, solo íconos." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://flors-library/biblioteca.html" />
+<meta property="og:image" content="https://flors-library/assets/og-image.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -13,11 +20,11 @@
 <body data-page="library">
 <header class="site-header">
 <div class="container nav">
-<a class="brand" href="index.html"><i class="ri-book-3-fill"></i> Flor´s Library</a>
+<a class="brand" href="index.html"><i class="ri-book-3-fill"></i> Flor’s Library</a>
 <button class="nav-toggle" aria-label="Abrir menú"><i class="ri-menu-3-line"></i></button>
 <nav class="site-nav" aria-label="Principal">
 <a href="index.html" class="nav-link"><i class="ri-home-5-line"></i><span>Inicio</span></a>
-<a href="biblioteca.html" class="nav-link is-active"><i class="ri-gallery-view-2"></i><span>Biblioteca</span></a>
+<a href="biblioteca.html" class="nav-link is-active" aria-current="page"><i class="ri-gallery-view-2"></i><span>Biblioteca</span></a>
 <a href="sobre-mi.html" class="nav-link"><i class="ri-user-heart-line"></i><span>Sobre mí</span></a>
 <a href="contacto.html" class="nav-link"><i class="ri-heart-2-line"></i><span>Contacto</span></a>
 </nav>
@@ -32,17 +39,22 @@
 
 <div class="filters">
 <div class="chips" role="listbox" aria-label="Categorías">
-<button class="chip chip--pill is-active" data-filter="all"><i class="ri-sparkling-2-line"></i> Todos</button>
-<button class="chip chip--pill" data-filter="romance"><i class="ri-heart-3-line"></i> Romance</button>
-<button class="chip chip--pill" data-filter="fantasia"><i class="ri-sword-line"></i> Fantasía</button>
-<button class="chip chip--pill" data-filter="misterio"><i class="ri-ghost-line"></i> Misterio</button>
-<button class="chip chip--pill" data-filter="no-ficcion"><i class="ri-seedling-line"></i> No Ficción</button>
-<button class="chip chip--pill" data-filter="poesia"><i class="ri-quill-pen-line"></i> Poesía</button>
+<button class="chip chip--pill is-active" data-filter="all" aria-pressed="true"><i class="ri-sparkling-2-line"></i> Todos</button>
+<button class="chip chip--pill" data-filter="romance" aria-pressed="false"><i class="ri-heart-3-line"></i> Romance</button>
+<button class="chip chip--pill" data-filter="fantasia" aria-pressed="false"><i class="ri-sword-line"></i> Fantasía</button>
+<button class="chip chip--pill" data-filter="misterio" aria-pressed="false"><i class="ri-ghost-line"></i> Misterio</button>
+<button class="chip chip--pill" data-filter="no-ficcion" aria-pressed="false"><i class="ri-seedling-line"></i> No Ficción</button>
+<button class="chip chip--pill" data-filter="poesia" aria-pressed="false"><i class="ri-quill-pen-line"></i> Poesía</button>
 </div>
 <div class="chips" role="listbox" aria-label="Estado">
-<button class="chip" data-status="all"><i class="ri-eye-2-line"></i> Todo</button>
-<button class="chip" data-status="leyendo"><i class="ri-book-open-line"></i> Leyendo</button>
-<button class="chip" data-status="finalizado"><i class="ri-check-line"></i> Finalizado</button>
+<button class="chip is-active" data-status="all" aria-pressed="true"><i class="ri-eye-2-line"></i> Todo</button>
+<button class="chip" data-status="leyendo" aria-pressed="false"><i class="ri-book-open-line"></i> Leyendo</button>
+<button class="chip" data-status="finalizado" aria-pressed="false"><i class="ri-check-line"></i> Finalizado</button>
+<button class="chip" data-status="pendiente" aria-pressed="false"><i class="ri-bookmark-line"></i> Pendiente</button>
+</div>
+<div class="input" role="search">
+<i class="ri-search-2-line"></i>
+<input id="library-search" type="search" placeholder="Buscar por título o autor" aria-label="Buscar por título o autor" />
 </div>
 </div>
 
@@ -216,7 +228,7 @@
 <footer class="site-footer">
 <div class="container footer__grid">
 <div>
-<a class="brand brand--sm" href="index.html"><i class="ri-book-3-fill"></i> Flor´s Library</a>
+<a class="brand brand--sm" href="index.html"><i class="ri-book-3-fill"></i> Flor’s Library</a>
 <p class="muted">Filtra, explora y guarda tus próximos amores literarios.</p>
 </div>
 <div class="footer__links">
